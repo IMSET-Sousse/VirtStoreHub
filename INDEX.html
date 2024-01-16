@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="" alt=" ">
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button type="button">Search</button>
+      </div>
+      <a href="#" class="signup-button">S'inscrire</a>
+      <a href="#" class="cart-button">Panier</a>
+    </div>
+  </header>
+
+  <?php
+  $imageFilenames = ['imag', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg'];
+
+  foreach ($imageFilenames as $filename) {
+      echo '<img src="' . $filename . '" alt="' . $filename . '" style="width: 200px; height: 150px; margin: 10px;">';
+  }
+  ?>
+    <footer>
+    <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
